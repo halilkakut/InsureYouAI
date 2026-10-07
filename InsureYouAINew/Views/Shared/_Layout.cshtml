@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InsureYouAI</title>
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="~/insureyou/img/favicon.ico" />
+
+    <link rel="stylesheet" href="~/insureyou/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/insureyou/css/animate.min.css" />
+    <link rel="stylesheet" href="~/insureyou/css/magnific-popup.css" />
+    <link rel="stylesheet" href="~/insureyou/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/insureyou/css/dripicons.css" />
+    <link rel="stylesheet" href="~/insureyou/css/slick.css" />
+    <link rel="stylesheet" href="~/insureyou/css/meanmenu.css" />
+    <link rel="stylesheet" href="~/insureyou/css/aos.css" />
+    <link rel="stylesheet" href="~/insureyou/css/swiper.min.css" />
+    <link rel="stylesheet" href="~/insureyou/css/default.css" />
+    <link rel="stylesheet" href="~/insureyou/css/style.css" />
+    <link rel="stylesheet" href="~/insureyou/css/responsive.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">InsureYouAI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - InsureYouAI -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="~/insureyou/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/insureyou/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="~/insureyou/js/popper.min.js"></script>
+    <script src="~/insureyou/js/bootstrap.min.js"></script>
+    <script src="~/insureyou/js/slick.min.js"></script>
+    <script src="~/insureyou/js/ajax-form.js"></script>
+    <script src="~/insureyou/js/paroller.js"></script>
+    <script src="~/insureyou/js/wow.min.js"></script>
+    <script src="~/insureyou/js/js_isotope.pkgd.min.js"></script>
+    <script src="~/insureyou/js/imagesloaded.min.js"></script>
+    <script src="~/insureyou/js/parallax.min.js"></script>
+    <script src="~/insureyou/js/jquery.waypoints.min.js"></script>
+    <script src="~/insureyou/js/jquery.counterup.min.js"></script>
+    <script src="~/insureyou/js/jquery.scrollup.min.js"></script>
+    <script src="~/insureyou/js/jquery.meanmenu.min.js"></script>
+    <script src="~/insureyou/js/parallax-scroll.js"></script>
+    <script src="~/insureyou/js/swiper.min.js"></script>
+    <script src="~/insureyou/js/aos.js"></script>
+    <script src="~/insureyou/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/insureyou/js/element-in-view.js"></script>
+    <script src="~/insureyou/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
